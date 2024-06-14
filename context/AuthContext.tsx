@@ -27,7 +27,7 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
             if (username != "" && password != "") {
                 setIsAuthenticated(true)
                 console.log("entrou")
-                return router.push('/recipes');
+                return router.push('/');
             }
 
             setIsAuthenticated(false)
