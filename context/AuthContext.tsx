@@ -28,8 +28,7 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
                 setIsAuthenticated(true)
                 return router.push('/');
             }
-
-            setIsAuthenticated(false)
+            
             setAuthError('Autenticação falhou. Por favor, verifique suas credenciais.');
         } catch (error) {
             setAuthError('Ocorreu um erro ao tentar fazer login.');
